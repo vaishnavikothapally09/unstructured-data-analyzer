@@ -3,7 +3,7 @@
 # -----------------------------------------------------------
 
 import streamlit as st
-from gtts import gTTS
+#from gtts import gTTS
 import speech_recognition as sr
 from pydub import AudioSegment
 import io
@@ -261,4 +261,5 @@ with tab3:
             else:
                 st.info("No named entities found.")
     else:
+
         st.info("Paste or select some text to see NER results.")
