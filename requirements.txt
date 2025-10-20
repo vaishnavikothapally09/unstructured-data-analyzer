@@ -1,0 +1,29 @@
+# --- Core Framework ---
+streamlit==1.32.0
+
+# --- Data & Utilities ---
+numpy==1.26.4
+pandas==2.2.2
+matplotlib==3.9.0
+pillow==10.3.0
+
+# --- Audio Processing ---
+pydub==0.25.1
+speechrecognition==3.10.1
+gtts==2.5.1
+
+# --- NLP & Text Analysis ---
+textblob==0.17.1
+wordcloud==1.9.3
+spacy==3.7.2
+nltk==3.9.1
+
+# --- Computer Vision & Image Processing ---
+rembg==2.0.57
+deepface==0.0.93
+
+# --- Misc ---
+tqdm==4.66.5
+
+# --- spaCy English Model (required for NER) ---
+en-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1.tar.gz
