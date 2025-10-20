@@ -19,6 +19,14 @@ import spacy
 from spacy import displacy
 import nltk
 
+# ✅ (Optional) Safe import handling
+try:
+    import speech_recognition as sr
+    from pydub import AudioSegment
+    from deepface import DeepFace
+except ModuleNotFoundError as e:
+    st.error(f"Missing dependency: {e}. Make sure it's in requirements.txt")
+
 # -----------------------------------------------------------
 # Setup
 # -----------------------------------------------------------
@@ -261,4 +269,5 @@ with tab3:
             else:
                 st.info("No named entities found.")
     else:
+
         st.info("Paste or select some text to see NER results.")
